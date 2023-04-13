@@ -18,12 +18,13 @@ header h1 {
     margin-top: 20px;
 }
 .questions {
-    display: flex;
+    display: none;
     justify-content: center;
     color: blueviolet;
 }
+
 .answers{
-    display: flex;
+    display: none;
     justify-content: center;
     color: aqua;
 }
@@ -37,8 +38,26 @@ header h1 {
     color: green;
     border-style: solid;
     border-color: blueviolet;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    margin-left: 770px;
 }
 
+#next {
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    border: 5px solid red;
+    background-color: red;
+    display: none;
+}
+
+/* .sh{
+} */
+
+.timer {
+    display: flex;
+    justify-content: center; 
+    font-size: 40px;
+}
