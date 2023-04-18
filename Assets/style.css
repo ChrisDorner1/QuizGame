@@ -31,7 +31,11 @@ header h1 {
 
 .wrapper {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
 }
+
 
 #startbutton {
     font-size: 50px;
@@ -41,7 +45,6 @@ header h1 {
     /* display: flex; */
     /* flex-wrap: wrap; */
     /* justify-content: center; */
-    margin-left: 770px;
 }
 
 #next {
@@ -53,8 +56,10 @@ header h1 {
     display: none;
 }
 
-/* .sh{
-} */
+.sh{
+    display: flex;
+    flex-direction: column;
+}
 
 .timer {
     display: flex;
