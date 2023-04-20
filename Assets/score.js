@@ -13,3 +13,9 @@ function highscore () {
     }
 }
 var scorelist = document.getElementById("s")
+
+//returnes you to the start of quiz
+var tryBtn = document.querySelector(".tryAgain")
+tryBtn.addEventListener("click", function(){
+    window.location.href = "index.html"
+})
