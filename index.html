@@ -11,60 +11,25 @@
 <body>
     <aside class="wrapper">
         <header>
-            <h1 class="quiz">Quiz Time</h1> <h2 class="timer"></h2>
+            <h1 class="quiz">Quiz Time</h1> <h2 class="timer"></h2> <a href="./score.html">HighScores</a>
         </header>
         <button id = "startbutton">Start</button>
         <section class="sh">
-            <div> <h2 class="questions" id="q"></h2> </div>
-                <button class = "answers correct" id="a1"></button>
-                <button class = "answers incorrect" id="a2"></button>
-                <button class = "answers incorrect" id="a3"></button>
-                <button class = "answers incorrect" id="a4"></button>
+            <div id="inqueary"> <h2 class="questions" id="q"></h2> </div>
+                <button class = "answers correct b1" onclick="checkAnswer('a1')" id="a1"></button>
+                <button class = "answers incorrect b2" onclick="checkAnswer('a2')" id="a2"></button>
+                <button class = "answers incorrect b3" onclick="checkAnswer('a3')" id="a3"></button>
+                <button class = "answers incorrect b4" onclick="checkAnswer('a4')" id="a4"></button>
                 <div class="response"></div>
         </section>
-        <section class="sh">
-            <div><h2 class="questions" id="q2"></h2></div>
-            <button class = "answers incorrect" id="q2a1"></button>
-            <button class = "answers incorrect" id="q2a2"></button>
-            <button class = "answers correct" id="q2a3"></button>
-            <button class = "answers incorrect" id="q2a4"></button>
-            <div class="response"></div>
-        </section>
-        <section class="sh">
-            <div><h2 class="questions" id="q3">How was Athena Born?<h2></div>
-            <div class = "answers incorrect" id="q3a1">A. Through the sheer will and determination of Zeus' first wife</div>
-            <div class = "answers incorrect" id="q3a2">B. From sea foam made from the blood of Uranus</div>
-            <div class = "answers correct" id="q3a3">C. Rupturing from Zeus' skull after he ate his pregnant wife</div>
-            <div class = "answers incorrect" id="q3a4">D. She wasnt born she fell from the sky to avenge Uranus</div>
-            <div class="response"></div>
-        </section>
-        <!-- <section class="sh">
-            <div><h2 class="questions" id="q4">Who was the father of the Minotaur?</h2></div>
-            <div class = "answers incorrect" id="q4a">A. Zeus</div>
-            <div class = "answers incorrect" id="q4a">B. the king of Crete, king Minos</div>
-            <div class = "answers incorrect" id="q4a">C. Theseus</div>
-            <div class = "answers correct" id="q4a">D. A White bull that was sacred to Poseidon</div>
-            <div class="response"></div>
-        </section>
-        <section class="sh"> -->
-            <!-- <div><h2 class="questions" id="q5">Why was Medusa turned into a monster?</h2></div>
-            <div class = "answers incorrect" id="q5a">
-                A. She Angered Aphrodite
-            </div>
-            <div class = "answers correct" id="q5a">
-                B. Poseidon was cheating on Athena and was trying to seduce her
-            </div>
-            <div class = "answers incorrect" id="q5a">
-                C. Her father was a king and angered the gods
-            </div>
-            <div class = "answers incorrect" id="q5a">
-                D. She claimed her wits and intelegence was greater than the gods
-            </div>
-            <div class="response"></div>
-        </section> -->
-        <section>
-            <a href="score.html"><button id="next">Next -></button></a>
-        </section>
+        <div id="scorePage" style="display: none;">
+            <h2>Final Score</h2>
+            <div id="input">Please type your initials</div>
+            <input type="text" maxlength="2" placeholder="EX"></input>
+            <div id="timescore"></div>
+            <button id="submit">Submit</button>
+            <button id="tryagain">Try again</button>
+        </div>
     </aside>
     <script src="Assets/script.js"></script>
 </body>
