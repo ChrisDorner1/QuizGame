@@ -1,0 +1,63 @@
+:root {
+    --color1: blueviolet;
+}
+* {
+    background-color: #22272c;
+}
+section{
+    margin-top: 50px;
+}
+
+header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--color1);
+    margin-top: 20px;
+}
+.questions {
+    justify-content: center;
+    color: blueviolet;
+}
+
+.answers{
+    justify-content: center;
+    color: aqua;
+}
+
+.wrapper {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#startbutton {
+    font-size: 50px;
+    color: green;
+    border-style: solid;
+    border-color: blueviolet;
+}
+
+#next {
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    border: 5px solid red;
+    background-color: red;
+    display: none;
+}
+
+.sh{
+    display: flex;
+    flex-direction: column;
+}
+
+.timer {
+    display: flex;
+    justify-content: center; 
+    font-size: 40px;
+}

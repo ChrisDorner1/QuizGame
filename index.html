@@ -9,7 +9,28 @@
     <title>Quiz Time</title>
 </head>
 <body>
-
+    <aside class="wrapper">
+        <header>
+            <h1 class="quiz">Quiz Time</h1> <h2 class="timer"></h2> <a href="./score.html">HighScores</a>
+        </header>
+        <button id = "startbutton">Start</button>
+        <section class="sh">
+            <div id="inqueary"> <h2 class="questions" id="q"></h2> </div>
+                <button class = "answers correct b1" onclick="checkAnswer('a1')" id="a1"></button>
+                <button class = "answers incorrect b2" onclick="checkAnswer('a2')" id="a2"></button>
+                <button class = "answers incorrect b3" onclick="checkAnswer('a3')" id="a3"></button>
+                <button class = "answers incorrect b4" onclick="checkAnswer('a4')" id="a4"></button>
+                <div class="response"></div>
+        </section>
+        <div id="scorePage" style="display: none;">
+            <h2>Final Score</h2>
+            <div id="input">Please type your initials</div>
+            <input type="text" maxlength="2" placeholder="EX"></input>
+            <div id="timescore"></div>
+            <button id="submit">Submit</button>
+            <button id="tryagain">Try again</button>
+        </div>
+    </aside>
     <script src="Assets/script.js"></script>
 </body>
 
